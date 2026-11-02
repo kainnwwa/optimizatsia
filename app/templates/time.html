@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Настройка таймера</title>
+</head>
+<body>
+    <h2>Введите количество секунд:</h2>
+    <input type="number" id="secondsInput" value="10" min="1">
+    
+    <button onclick="startTimer()">Запуск</button>
+
+    <script>
+        function startTimer() {
+            let secs = document.getElementById('secondsInput').value;
+            window.location.href = `/timer/?time=${secs}`;
+        }
+    </script>
+</body>
+</html>
